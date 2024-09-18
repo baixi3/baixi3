@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () { // 监听DOM完全加载完毕
+  // 页面初始化和菜单调整
   let headerContentWidth, $nav
   let mobileSidebarOpen = false
 

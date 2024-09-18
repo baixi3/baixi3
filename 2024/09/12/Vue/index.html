@@ -409,7 +409,7 @@
 <h2 id="14-Router路由-Vue2"><a href="#14-Router路由-Vue2" class="headerlink" title="14. Router路由(Vue2)"></a>14. Router路由(Vue2)</h2><h3 id="14-1-路由基础"><a href="#14-1-路由基础" class="headerlink" title="14.1 路由基础"></a>14.1 路由基础</h3><p>路径和组件的映射关系</p>
 <h4 id="基础步骤"><a href="#基础步骤" class="headerlink" title="* 基础步骤"></a>* 基础步骤</h4><p>首先在项目里配置，vue3将用router4版本</p>
 <blockquote>
-<p>npm add <a href="mailto:&#x76;&#117;&#x65;&#x2d;&#114;&#x6f;&#x75;&#116;&#101;&#114;&#x40;&#51;&#x2e;&#x36;&#46;&#53;">&#x76;&#117;&#x65;&#x2d;&#114;&#x6f;&#x75;&#116;&#101;&#114;&#x40;&#51;&#x2e;&#x36;&#46;&#53;</a></p>
+<p>npm add <a href="mailto:&#118;&#x75;&#x65;&#x2d;&#114;&#111;&#117;&#x74;&#x65;&#x72;&#64;&#51;&#x2e;&#54;&#x2e;&#53;">&#118;&#x75;&#x65;&#x2d;&#114;&#111;&#117;&#x74;&#x65;&#x72;&#64;&#51;&#x2e;&#54;&#x2e;&#53;</a></p>
 </blockquote>
 <p>然后在main.js里配置插件</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="title class_">Vue</span> <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App.vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">VueRouter</span> <span class="keyword">from</span> <span class="string">&#x27;vue-router&#x27;</span> <span class="comment">// 引入</span></span><br><span class="line"><span class="title class_">Vue</span>.<span class="property">config</span>.<span class="property">productionTip</span> = <span class="literal">false</span></span><br><span class="line"><span class="title class_">Vue</span>.<span class="title function_">use</span>(<span class="title class_">VueRouter</span>) <span class="comment">// 安装注册</span></span><br><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> <span class="title class_">VueRouter</span>() <span class="comment">// 创建路由对象</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">render</span>: <span class="function"><span class="params">h</span> =&gt;</span> <span class="title function_">h</span>(<span class="title class_">App</span>),</span><br><span class="line">  router <span class="comment">// 注入建立关联</span></span><br><span class="line">&#125;).$mount(<span class="string">&#x27;#app&#x27;</span>)</span><br></pre></td></tr></table></figure>
@@ -777,8 +777,8 @@
   const initValine = () => {
     const valine = new Valine(Object.assign({
       el: '#vcomment',
-      appId: '',
-      appKey: '',
+      appId: 'tV4NMEZgf5fGA97EAhPqsK5t-gzGzoHsz',
+      appKey: 'voqf2AOon37Yr7mWimcuzRUo',
       avatar: 'monsterid',
       serverURLs: '',
       emojiMaps: "",
